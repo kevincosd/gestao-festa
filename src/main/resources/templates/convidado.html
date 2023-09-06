@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Lista de Convidados</title>
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<h1>Cadastro Convidado</h1>
+	<form action="salvar-convidado" method="Post">
+		Nome convidado </br> <input type="text" id="nome" name="nome"/> </br></br>
+		RG </br> <input type="text" id="rg" name="rg"/> </br></br>
+		CPF</br> <input type="text" id="cpf" name="cpf"/> </br></br>
+		Quantidade acompanhante</br> <input type="text"id="acompanhe" name="acompanhe" /></br> </br>
+		<input type="submit" value="Salvar">
+	</form>
+</body>
+</html>
